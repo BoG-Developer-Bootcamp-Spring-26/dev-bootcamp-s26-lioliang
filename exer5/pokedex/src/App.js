@@ -3,13 +3,14 @@ import './App.css';
 import {useState, useEffect} from "react";
 
 const url = "https://pokeapi.co/api/v2/pokemon"
-let dexNumber = 1;
+
 
 
   
 
 function App() {
   const [pokemon, setPokemon] = useState(null);
+  const [dexNumber, setDexNumber] = useState(1);
   
   useEffect(() => {
     const getPokemonJSON = async () => {
@@ -17,7 +18,6 @@ function App() {
           const response = await fetch(`${url}/${dexNumber}`); //A string template literal; basically a more readable way to put variables in a string
           const pokemonJSON = await response.json();
 
-          console.log(pokemonJSON.name);
           setPokemon(pokemonJSON);
           return pokemonJSON;
       } catch(e) {
@@ -35,7 +35,10 @@ function App() {
         <img src={pokemon.sprites.front_default}></img>
         <p>{pokemon.name}
         </p>
-        
+        <div className = "arrows">
+          <button onClick={() => setDexNumber(dexNumber-1)}>left</button>
+          <button onClick={() => setDexNumber(dexNumber+1)}>right</button>
+        </div>
       </header>
     </div>
   );
