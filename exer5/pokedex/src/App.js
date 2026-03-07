@@ -1,12 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
 import {useState, useEffect} from "react";
+import StatsPanel from './components/StatsPanel';
 
 const url = "https://pokeapi.co/api/v2/pokemon"
 
 
-
-  
 
 function App() {
   const [pokemon, setPokemon] = useState(null);
@@ -31,7 +30,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      
         <img src={pokemon.sprites.front_default}></img>
         <p>{pokemon.name}
         </p>
@@ -39,7 +38,7 @@ function App() {
           <button onClick={() => setDexNumber(dexNumber-1)}>left</button>
           <button onClick={() => setDexNumber(dexNumber+1)}>right</button>
         </div>
-      </header>
+        <StatsPanel pokemon={pokemon}></StatsPanel>
     </div>
   );
 }
