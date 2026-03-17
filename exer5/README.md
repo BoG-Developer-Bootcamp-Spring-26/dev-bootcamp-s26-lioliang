@@ -1,6 +1,6 @@
 # Exercise 5 — React Pokédex
 
-link: https://youtu.be/M5fv5CXlx2I
+link: https://youtu.be/o5VBWQHNAxA
 
 ## Description
 

@@ -16,7 +16,6 @@ code {
   display: flex;
   flex-direction: column;
   align-items: center;
-  
   margin:25px;
 }
 
@@ -46,7 +45,7 @@ button {
 }
 
 .colorText {
-  width:auto;
+  width:100%;
   padding:5px;
 }
 

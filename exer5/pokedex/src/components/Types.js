@@ -20,7 +20,7 @@ function Types({pokemonTypes}) {
         fairy: "#D685AD"
     };
         return(
-            <div style={{display:"flex", flexDirection:"column", alignItems:"flex-start"}}>
+            <div style={{display:"flex", flexDirection:"column", alignItems:"flex-start", width:'100%'}}>
             <b>Types</b>
             <div style={{ display: "flex", gap:"5px" }} >
                 {pokemonTypes.map((typeObj, index) => (

@@ -44,12 +44,14 @@ function App() {
           </div>
           <p className="colorText" style={{backgroundColor:'lightgrey'}}>{pokemon.name}
           </p>
-          <Types pokemonTypes={pokemon.types}></Types>
+          <Types style={{alignSelf:'start'}} pokemonTypes={pokemon.types}></Types>
+
           <div className = "arrows">
           <button onClick={() => setDexNumber(dexNumber-1)}>{"<"}</button>
           <button onClick={() => setDexNumber(dexNumber+1)}>{">"}</button>
         </div>
-        </div>
+
+      </div>
 
         
         <div className="box">
