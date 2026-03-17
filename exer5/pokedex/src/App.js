@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
-import {useState, useEffect} from "react";
+import {useState} from "react";
 import InfoPanel from './components/InfoPanel';
 import Types from './components/Types';
 
