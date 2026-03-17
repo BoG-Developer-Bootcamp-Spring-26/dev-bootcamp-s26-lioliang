@@ -14,8 +14,7 @@ function App() {
   const [panel, setPanel] = useState("Info");
   
   
-  useEffect(() => {
-    const getPokemonJSON = async () => {
+  const getPokemonJSON = async () => {
       try {
           if (dexNumber < 1 || dexNumber > 1024) {
             setDexNumber(1);
@@ -31,7 +30,6 @@ function App() {
       }
     }
     getPokemonJSON();
-  }, [dexNumber]);
 
   if (!pokemon) return <div><p>Loading...</p></div>;
 
