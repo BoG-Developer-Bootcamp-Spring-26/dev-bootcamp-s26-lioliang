@@ -11,3 +11,43 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  margin:25px;
+}
+
+.panel {
+  background-color: lightgray;
+  width:200px;
+  height:300px;
+  margin:10px;
+  overflow-y:scroll;
+}
+
+button {
+  margin:5px;
+  padding-left: 20px;
+  padding-right:20px;
+  padding-top:5px;
+  padding-bottom: 5px;
+}
+
+.pokeImage {
+  border: 1px solid black;
+  width:200px;
+  height:200px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.colorText {
+  width:auto;
+  padding:5px;
+}
+
+
